@@ -102,4 +102,5 @@ void vendor_load_properties() {
         default:
             LOG(ERROR) << "Unexpected RF version: " << rf_version;
     }
+    OverrideProperty("ro.apex.updatable", "false");
 }
