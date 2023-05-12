@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2022 The superiorOS Project
+# Copyright (C) 2021-2022 The bananaOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,14 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ice device
 $(call inherit-product, device/realme/RMX3461/device.mk)
 
-# Inherit some common superior stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
-BUILD_WITH_GAPPS := true
-TARGET_INCLUDE_MATLOG := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_EXCLUDE_MATLOG := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := true
+WITH_GAPPS := true
+BANANA_MAINTAINER := ZirgomHaidar
 
-PRODUCT_NAME := superior_RMX3461
+PRODUCT_NAME := banana_RMX3461
 PRODUCT_DEVICE := RMX3461
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
