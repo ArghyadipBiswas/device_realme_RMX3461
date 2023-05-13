@@ -27,5 +27,11 @@
 
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
+    
+    <!-- Smart Cutoff enable -->
+    <bool name="config_supportSmartCutoff">true</bool>
+
+    <!-- Smart Charging enable -->
+    <bool name="config_supportSmartCharging">true</bool>
 
 </resources>
