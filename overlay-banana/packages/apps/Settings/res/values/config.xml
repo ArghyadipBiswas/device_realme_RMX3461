@@ -10,5 +10,8 @@
     
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
+    
+    <!-- Default for LineageSettings.Secure.VOLUME_PANEL_ON_LEFT -->
+    <bool name="def_volume_panel_on_left">true</bool>
 
 </resources>
