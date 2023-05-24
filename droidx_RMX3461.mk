@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2022 The superiorOS Project
+# Copyright (C) 2021-2022 The droidxOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,14 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ice device
 $(call inherit-product, device/realme/RMX3461/device.mk)
 
-# Inherit some common superior stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common droidx stuff.
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
-BUILD_WITH_GAPPS := true
-TARGET_INCLUDE_MATLOG := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_QUICK_TAP := true
+DROIDX_GAPPS := true
+DROIDX_BUILD_TYPE := OFFICIAL
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
-PRODUCT_NAME := superior_RMX3461
+PRODUCT_NAME := droidx_RMX3461
 PRODUCT_DEVICE := RMX3461
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
